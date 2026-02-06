@@ -13,7 +13,7 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Tools</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -22,6 +22,7 @@
 
     <main>
         <section id="hero">
+            <img src="./profile.jpg" alt="Sarah Fajriah" class="profile-img">
             <h2>Information Systems Student</h2>
             <h1>Sarah Fajriah</h1>
             <p>Exploring web development and trying to build things that work. Currently learning more about digital ecosystems and decentralized tech.</p>
@@ -39,50 +40,81 @@
 
         <section id="skills">
             <div class="container">
-                <h2 class="section-title">What I'm Learning</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Frontend</h3>
-                        <ul><li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>TypeScript</li></ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Backend</h3>
-                        <ul><li>Supabase</li><li>PostgreSQL</li><li>Laravel</li><li>Basic Solidity</li></ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Others</h3>
-                        <ul><li>Google Cloud</li><li>Git</li><li>Figma</li><li>Inkscape</li></ul>
-                    </div>
-                </div>
+                <h2 class="section-title">Technical Proficiency</h2>
+                <table class="skill-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Skill</th>
+                            <th>Tingkat Kemahiran</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Frontend (React/Next.js)</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Backend (Laravel/Supabase)</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Database (PostgreSQL)</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Smart Contract (Solidity)</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>UI Design (Figma)</td>
+                            <td>Basic</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
         <section id="projects">
             <div class="container">
                 <h2 class="section-title">Things I've Built</h2>
-                
                 <div class="project-card">
                     <h3>Harsa</h3>
                     <p>A simple exploration in decentralized finance for agriculture. Trying to make trade a bit more transparent.</p>
                 </div>
-
                 <div class="project-card">
                     <h3>Accounting System</h3>
                     <p>An experiment with AI and on-chain records to help keep financial data a bit more secure.</p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Ringkas 1.0</h3>
-                    <p>A small business management tool I worked on to handle inventory and basic financial tracking.</p>
                 </div>
             </div>
         </section>
 
         <section id="contact">
-            <div class="container" style="text-align: center;">
-                <h2 class="section-title">Say Hi</h2>
-                <p style="font-size: 1.1rem; margin-bottom: 2.5rem;">If you want to see my messy code or just collaborate, find me here.</p>
-                <a href="https://github.com/s-erzv" target="_blank" class="btn btn-light">GitHub Profile</a>
+            <div class="container">
+                <h2 class="section-title" style="text-align: center;">Get In Touch</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-light">Submit</button>
+                </form>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://github.com/s-erzv" target="_blank" style="color: white; text-decoration: none; font-size: 0.9rem; opacity: 0.8;">Or visit my GitHub</a>
+                </div>
             </div>
         </section>
     </main>
