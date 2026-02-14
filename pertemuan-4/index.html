@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas pertemuan 2 hitlab 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-brand">nupers</div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <div class="close-menu">&times;</div>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="slider round"></div>
+            </label>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <img src="./profile.jpg" alt="Sarah Fajriah" class="profile-img">
+            <h2>Information Systems Student</h2>
+            <h1>Sarah Fajriah</h1>
+            <p>Exploring web development and trying to build things that work. Currently learning more about digital ecosystems and decentralized tech.</p>
+            <a href="#projects" class="btn">Some Works</a>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">A Bit About Me</h2>
+                <p style="font-size: 1.2rem; max-width: 800px; line-height: 1.8;">
+                    I'm an Information Systems student who enjoys diving into code. I don't know everything yet, but I'm a soft perfectionist who likes to keep redoing things until they feel right. Just trying to build something real, one small project at a time.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Proficiency</h2>
+                <div class="tech-stack-container">
+                    <div class="tech-stack-category">
+                        <h3>Web 3 Technologies</h3>
+                        <div class="tech-pills">
+                            <span class="tech-pill">Solidity</span>
+                            <span class="tech-pill">Ethereum (ETH)</span>
+                            <span class="tech-pill">Base Indonesia</span>
+                            <span class="tech-pill">Arbitrum</span>
+                            <span class="tech-pill">Polkadot</span>
+                            <span class="tech-pill">Web3.js/Ethers.js</span>
+                            <span class="tech-pill">Hardhat/Truffle</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack-category">
+                        <h3>Web 2 Technologies</h3>
+                        <div class="tech-pills">
+                            <span class="tech-pill">PostgreSQL</span>
+                            <span class="tech-pill">MySQL</span>
+                            <span class="tech-pill">Supabase</span>
+                            <span class="tech-pill">Firebase</span>
+                            <span class="tech-pill">Next.js</span>
+                            <span class="tech-pill">React</span>
+                            <span class="tech-pill">Express.js</span>
+                            <span class="tech-pill">Django</span>
+                            <span class="tech-pill">FastAPI</span>
+                            <span class="tech-pill">Figma (UI Design)</span>
+                            <span class="tech-pill">RESTful APIs</span>
+                            <span class="tech-pill">Git/GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">Things I've Built</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Harsa</h3>
+                        <p>A simple exploration in decentralized finance for agriculture. Trying to make trade a bit more transparent.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Accounting System</h3>
+                        <p>An experiment with AI and on-chain records to help keep financial data a bit more secure.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title" style="text-align: center;">Get In Touch</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-light">Submit</button>
+                </form>
+                <div id="formConfirmationMessage" style="text-align: center; margin-top: 1rem; color: var(--accent-color); font-weight: 500; display: none;"></div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://github.com/s-erzv" target="_blank" style="color: white; text-decoration: none; font-size: 0.9rem; opacity: 0.8;">Or visit my GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Sarah — Slowly, quietly, intentionally.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/s.erzv" target="_blank" aria-label="Instagram">
+                    <img src="https://img.icons8.com/ios-filled/24/000000/instagram-new--v1.png" alt="Instagram">
+                </a>
+                <a href="https://nupers.site" target="_blank" aria-label="Portfolio">
+                    <img src="https://img.icons8.com/ios-filled/24/000000/globe--v1.png" alt="Portfolio">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const navLinks = document.querySelector('.nav-links');
+            const closeMenu = document.querySelector('.close-menu');
+            const darkModeToggle = document.getElementById('checkbox'); // Corrected to target the checkbox
+
+            // Hamburger menu functionality
+            hamburgerMenu.addEventListener('click', () => {
+                hamburgerMenu.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            closeMenu.addEventListener('click', () => {
+                hamburgerMenu.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+
+            document.addEventListener('click', (event) => {
+                const isClickInsideNav = navLinks.contains(event.target) || hamburgerMenu.contains(event.target);
+                // Corrected logic for dark mode toggle element check
+                // Check if the click is inside the .theme-switch label which wraps the checkbox
+                const themeSwitch = document.querySelector('.theme-switch');
+                const isClickInsideDarkModeToggle = themeSwitch && themeSwitch.contains(event.target); 
+                
+                if (!isClickInsideNav && navLinks.classList.contains('active') && !isClickInsideDarkModeToggle) {
+                    hamburgerMenu.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburgerMenu.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // Dark Mode Toggle functionality
+            if (darkModeToggle) {
+                // Check for saved theme preference on load
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                    document.body.classList.add('dark-mode');
+                    darkModeToggle.checked = true; // Set checkbox state
+                }
+
+                darkModeToggle.addEventListener('change', () => { // Listen for 'change' event on checkbox
+                    document.body.classList.toggle('dark-mode');
+                    // Save preference
+                    if (document.body.classList.contains('dark-mode')) {
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+
+            // Form Handling functionality
+            const contactForm = document.querySelector('.contact-form');
+            const nameInput = document.getElementById('name');
+            const formConfirmationMessage = document.getElementById('formConfirmationMessage');
+
+            if (contactForm && nameInput && formConfirmationMessage) {
+                contactForm.addEventListener('submit', (event) => {
+                    event.preventDefault(); // Prevent page reload
+
+                    const name = nameInput.value;
+                    formConfirmationMessage.textContent = `Halo ${name}, pesan Anda berhasil terkirim!`;
+                    formConfirmationMessage.style.display = 'block';
+
+                    // Clear form fields
+                    contactForm.reset();
+
+                    // Hide confirmation message after 5 seconds
+                    setTimeout(() => {
+                        formConfirmationMessage.style.display = 'none';
+                    }, 5000);
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
